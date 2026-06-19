@@ -51,7 +51,6 @@
 Сначала реализуй только backend-часть (репозиторий + контроллер), UI не трогай.
 ```
 
-
 ## Шаг 4. Проверь
 
 Проверь тремя способами:
@@ -69,19 +68,20 @@
 3) не тронут ли лишний код.
 ```
 
-
 ## Шаг 5. Закоммить
 
 Сделай коммит с понятным сообщением.
 
 ```bash
-git add .
+git add src/orders/service.py
 git commit -m "feat: sort orders by date in profile"
 ```
 
 Сообщение должно отвечать на вопрос «что изменилось?».
 
 ## Шаг 6. Рефлексия
+
+Рефлексия нужна, чтобы не повторять одни и те же ошибки в следующей сессии с агентом.
 
 Задай себе 3 вопроса:
 
@@ -99,7 +99,6 @@ git commit -m "feat: sort orders by date in profile"
 → В следующий раз сначала проверять diff, потом уже запускать тесты.
 ```
 
-
 ---
 
 ## Мини-пример
@@ -116,4 +115,4 @@ git commit -m "feat: sort orders by date in profile"
 Ты: git commit -m "feat: handle duplicate email in signup"
 ```
 
-Следующий шаг: [`05-environments.md`](05-environments.md).
+Следующий шаг: разберись, как применять петлю в конкретном редакторе — [`05-environments.md`](05-environments.md).

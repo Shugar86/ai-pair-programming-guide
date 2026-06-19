@@ -8,7 +8,7 @@
 
 ## Схема
 
-![Pair programming workflow](../assets/workflow.svg)
+![Схема творческой петли](../assets/workflow.svg)
 
 ## Шаг 1. Захвати идею
 

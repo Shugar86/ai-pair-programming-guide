@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="520" viewBox="0 0 400 520">
+  <rect x="100" y="10" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="42" text-anchor="middle" font-size="16" fill="#0d47a1">1. Определи задачу</text>
+
+  <line x1="200" y1="60" x2="200" y2="90" stroke="#1976d2" stroke-width="2"/>
+  <polygon points="195,85 200,95 205,85" fill="#1976d2"/>
+
+  <rect x="100" y="95" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="127" text-anchor="middle" font-size="16" fill="#0d47a1">2. Согласуй план</text>
+
+  <line x1="200" y1="145" x2="200" y2="175" stroke="#1976d2" stroke-width="2"/>
+  <polygon points="195,170 200,180 205,170" fill="#1976d2"/>
+
+  <rect x="100" y="180" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="212" text-anchor="middle" font-size="16" fill="#0d47a1">3. Реализуй</text>
+
+  <line x1="200" y1="230" x2="200" y2="260" stroke="#1976d2" stroke-width="2"/>
+  <polygon points="195,255 200,265 205,255" fill="#1976d2"/>
+
+  <rect x="100" y="265" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="297" text-anchor="middle" font-size="16" fill="#0d47a1">4. Проверь</text>
+
+  <line x1="200" y1="315" x2="200" y2="345" stroke="#1976d2" stroke-width="2"/>
+  <polygon points="195,340 200,350 205,340" fill="#1976d2"/>
+
+  <rect x="100" y="350" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="382" text-anchor="middle" font-size="16" fill="#0d47a1">5. Закоммить</text>
+
+  <line x1="200" y1="400" x2="200" y2="430" stroke="#1976d2" stroke-width="2"/>
+  <polygon points="195,425 200,435 205,425" fill="#1976d2"/>
+
+  <rect x="100" y="435" width="200" height="50" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="467" text-anchor="middle" font-size="16" fill="#0d47a1">6. Рефлексия</text>
+
+  <path d="M 300 460 C 340 460, 340 35, 300 35" fill="none" stroke="#ff9800" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="295,40 305,35 295,30" fill="#ff9800"/>
+  <text x="355" y="250" text-anchor="middle" font-size="14" fill="#e65100" transform="rotate(90 355 250)">следующая задача</text>
+</svg>

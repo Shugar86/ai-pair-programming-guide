@@ -21,9 +21,11 @@ AI-редакторы уже умеют писать код. Но код, кот
 - [`docs/07-examples/`](docs/07-examples/) — реальные текстовые сессии.
 - [`docs/08-exercises.md`](docs/08-exercises.md) — практические задания.
 - [`docs/09-checklists.md`](docs/09-checklists.md) — чеклисты на каждый этап.
+- [`docs/10-antipatterns.md`](docs/10-antipatterns.md) — антипаттерны работы с AI.
+- [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) — продвинутые сценарии и рабочие кейсы.
 - [`templates/`](templates/) — шаблоны `AGENTS.md` и карточки сессии для твоих проектов.
 
-## Быстрый старт
+Быстрый старт
 
 1. Открой свой проект в редакторе с AI (Cursor, Kimi Code, Claude Code и т.д.).
 2. Опиши задачу одним предложением.

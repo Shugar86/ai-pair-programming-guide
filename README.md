@@ -61,7 +61,7 @@
 - [`docs/13-git-github.md`](docs/13-git-github.md) — основы git и GitHub: clone, commit, PR, merge, CI/CD.
 - [`docs/14-ide-cli-workflow.md`](docs/14-ide-cli-workflow.md) — как работать в IDE и в терминале.
 - [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md) — что делать, если ничего не получается: WSL, SSH, VDS, откаты.
-- [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — как показать задачу нейросети и что делать, если ничего непонятно.
+- [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — как показать задачу нейросети и что делать, если ничего не понятно.
 - [`templates/`](templates/) — шаблоны `AGENTS.md`, ADR и карточки сессии для твоих проектов.
 
 ## Быстрый старт

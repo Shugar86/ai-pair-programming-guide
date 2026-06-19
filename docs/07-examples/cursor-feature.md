@@ -71,3 +71,5 @@ git commit -m "feat: add copy email button in profile"
 Даже простая кнопка может размазаться по проекту. Указывай scope до первого diff и читай каждое изменение. Cursor быстро исправляет ошибки направления, если ты ловишь их рано.
 
 Какие паттерны здесь работали — см. [`06-prompt-patterns.md`](../06-prompt-patterns.md).
+
+Следующий пример: рефакторинг в Claude Code — [`claude-refactor.md`](claude-refactor.md).

@@ -28,8 +28,11 @@ AI-редакторы уже умеют писать код. Но код, кот
 - [`docs/09-checklists.md`](docs/09-checklists.md) — чеклисты на каждый этап.
 - [`docs/10-antipatterns.md`](docs/10-antipatterns.md) — антипаттерны работы с AI.
 - [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) — продвинутые сценарии и рабочие кейсы.
-- [`docs/12-setup.md`](docs/12-setup.md) — что скачать, как установить агентов, git и стек.
-- [`docs/13-git-github.md`](docs/13-git-github.md) — основы git и GitHub для pair programming.
+- [`docs/12-setup.md`](docs/12-setup.md) — что скачать, как установить агентов, git, пакеты и стек.
+- [`docs/13-git-github.md`](docs/13-git-github.md) — основы git и GitHub: clone, commit, PR, merge, CI/CD.
+- [`docs/14-ide-cli-workflow.md`](docs/14-ide-cli-workflow.md) — как работать в IDE и в терминале.
+- [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md) — что делать, если ничего не получается: WSL, SSH, VDS, откаты.
+- [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — как показать задачу нейросети и что делать, если ничего непонятно.
 - [`templates/`](templates/) — шаблоны `AGENTS.md`, ADR и карточки сессии для твоих проектов.
 
 ## Быстрый старт
@@ -60,6 +63,10 @@ AI-редакторы уже умеют писать код. Но код, кот
 - твоя работа — принимать продуктовые и архитектурные решения, а также держать в голове инварианты системы.
 
 Если чувствуешь, что агент «тащит тебя за собой», сделай паузу: закрой чат, посмотри diff, сформулируй своими словами, что сейчас происходит в коде, и только потом продолжай диалог.
+
+## Если ничего непонятно
+
+Это нормально. Начни с [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — там разобрано, как показать задачу нейросети, что делать, когда агент не понял, и как не утонуть в ответе. Если техническое окружение ломается — иди в [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md).
 
 ## Лицензия
 

@@ -91,6 +91,14 @@ git config --global user.name "Твоё Имя"
 git config --global user.email "you@example.com"
 ```
 
+### Если что-то пошло не так
+
+- **Установщик не запускается** — скачай версию для своей разрядности (64-bit для современных компьютеров).
+- **`git` не recognized** — перезагрузи терминал или компьютер после установки.
+- **На Windows лучше использовать Git Bash** — он идёт в комплекте с установщиком git.
+
+Больше про типичные проблемы — в [`15-troubleshooting.md`](15-troubleshooting.md).
+
 ---
 
 ## Шаг 3. GitHub
@@ -124,7 +132,53 @@ python3 --version
 
 ---
 
-## Шаг 5. Проверка готовности
+## Шаг 5. Пакеты и зависимости проекта
+
+Почти любой проект использует библиотеки. Вот как их устанавливать.
+
+### JavaScript / TypeScript
+
+```bash
+npm install      # если в проекте package.json
+# или
+yarn install
+# или
+pnpm install
+```
+
+### Python
+
+```bash
+pip install -r requirements.txt
+# или
+poetry install
+```
+
+### Rust
+
+```bash
+cargo build
+```
+
+### Go
+
+```bash
+go mod download
+```
+
+### Системные пакеты (Linux)
+
+```bash
+sudo apt update && sudo apt install <название-пакета>   # Debian/Ubuntu
+sudo dnf install <название-пакета>                      # Fedora
+brew install <название-пакета>                          # macOS
+```
+
+Если команда выдаёт ошибку — сначала проверь, что нужный менеджер пакетов установлен. Подробнее — в [`15-troubleshooting.md`](15-troubleshooting.md).
+
+---
+
+## Шаг 6. Проверка готовности
 
 После установки у тебя должно быть:
 
@@ -132,9 +186,14 @@ python3 --version
 - [ ] `git --version` показывает версию.
 - [ ] Аккаунт на GitHub создан.
 - [ ] Стек проекта установлен (Node/Python/Go и т.д.).
+- [ ] Пакеты проекта устанавливаются без ошибок.
 
 Если всё на месте — можно открывать проект и пробовать первую сессию pair programming.
 
 ---
 
-Следующий шаг: узнай, как фиксировать и публиковать изменения, в [`13-git-github.md`](13-git-github.md).
+Следующие шаги:
+- Как фиксировать и публиковать изменения — [`13-git-github.md`](13-git-github.md).
+- Как работать в IDE и терминале — [`14-ide-cli-workflow.md`](14-ide-cli-workflow.md).
+- Если установка не идёт — [`15-troubleshooting.md`](15-troubleshooting.md).
+- Как объяснять задачи нейросети — [`16-ai-for-beginners.md`](16-ai-for-beginners.md).

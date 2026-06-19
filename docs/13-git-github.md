@@ -99,7 +99,14 @@ git pull origin main
 
 ```bash
 git clone https://github.com/username/repo.git
+cd repo
 ```
+
+После клонирования обычно нужно:
+
+1. Установить зависимости (`npm install`, `pip install -r requirements.txt` и т.д.).
+2. Запустить тесты, чтобы убедиться, что всё работает.
+3. Открыть проект в редакторе и начать работу.
 
 ---
 
@@ -123,6 +130,122 @@ git push origin feature-login
 ```
 
 Затем на GitHub можно создать Pull Request, чтобы влить изменения в `main`.
+
+---
+
+## Pull Requests
+
+Pull Request (PR) — это запрос на влитие твоей ветки в `main`. Через PR можно обсудить изменения и прогнать проверки до того, как они попадут в основную ветку.
+
+### Через веб-интерфейс
+
+1. Запушь ветку: `git push origin feature-login`.
+2. Открой репозиторий на GitHub.
+3. Нажми **Compare & pull request**.
+4. Напиши заголовок и описание: что изменилось и зачем.
+5. Нажми **Create pull request**.
+
+### Через GitHub CLI
+
+```bash
+gh pr create --title "feat: add login" --body "What changed and why"
+```
+
+### После approve
+
+```bash
+gh pr merge
+# или нажми Merge pull request на GitHub
+```
+
+---
+
+## Merge и конфликты
+
+**Merge** — слияние одной ветки с другой. Обычно вливаешь свою feature-ветку в `main`.
+
+```bash
+git checkout main
+git pull origin main
+git merge feature-login
+```
+
+### Конфликт
+
+Конфликт возникает, когда одна и та же строка изменена в обеих ветках. Git не может сам решить, какой вариант правильный.
+
+**Признаки:**
+
+```text
+<<<<<<< HEAD
+старая версия
+=======
+новая версия
+>>>>>>> feature-login
+```
+
+**Что делать:**
+
+1. Открой файл в редакторе.
+2. Выбери нужный вариант, удали маркеры `<<<<<<<`, `=======`, `>>>>>>>`.
+3. Сохрани файл.
+4. `git add <файл>`
+5. `git commit -m "merge: resolve conflict"`
+
+Если боишься конфликтов — делай ветки короткими и чаще забирай актуальный `main`.
+
+---
+
+## CI/CD — что это
+
+CI/CD (Continuous Integration / Continuous Deployment) — автоматические проверки и деплой при каждом push.
+
+В учебных проектах чаще всего используется **CI**:
+
+- при push в PR запускаются тесты;
+- если тесты падают — PR не вливают, пока не починят;
+- линтер проверяет стиль кода.
+
+На GitHub CI настраивается через **GitHub Actions** — файлы `.github/workflows/*.yml` в репозитории.
+
+```yaml
+# Пример .github/workflows/ci.yml
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm test
+```
+
+Если CI красный — смотри логи, исправляй ошибки, push снова.
+
+---
+
+## Просмотр изменений перед коммитом
+
+### git diff
+
+```bash
+git diff                    # что изменилось, но ещё не добавлено
+git diff --staged          # что уже добавлено в коммит
+```
+
+### git add -p
+
+Позволяет добавить не весь файл, а только выбранные куски:
+
+```bash
+git add -p filename.py
+```
+
+Git будет спрашивать для каждого куска: добавлять или нет.
 
 ---
 
@@ -170,4 +293,7 @@ gh pr create --title "feat: add login" --body "What changed and why"
 
 ---
 
-Следующий шаг: попробуй первую сессию pair programming по [`04-workflow.md`](04-workflow.md).
+Следующие шаги:
+- Попробуй первую сессию pair programming — [`04-workflow.md`](04-workflow.md).
+- Разберись, как работать в IDE и терминале — [`14-ide-cli-workflow.md`](14-ide-cli-workflow.md).
+- Если что-то пошло не так — [`15-troubleshooting.md`](15-troubleshooting.md).

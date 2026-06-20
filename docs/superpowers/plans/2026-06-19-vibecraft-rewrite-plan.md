@@ -1,8 +1,8 @@
 # VibeCraft Rewrite Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use `superpowers:subagent-driven-development` to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+**Goal:** Переписать все `.md`-файлы гайда и добавить `docs/17-future.md` так, чтобы гайд звучал как приглашение создавать вместе с AI: продвинуто, понятно, без душнилы, с реальными примерами, ссылками и взглядом на 2+ года.
 
-**Goal:** Переписать все `.md`-файлы гайда и добавить `docs/17-future.md` в вайбе `creative-partner`: продвинуто, понятно, без душнилы, с реальными примерами, ссылками и взглядом на 2+ года.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use `superpowers:subagent-driven-development` to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Architecture:** Сохраняем текущую структуру из 16 файлов, добавляем 17-й. Каждый файл переписывается целиком с единым голосом: прямое «ты», конкретные диалоги, ссылки, короткий вердикт первым. Шаблоны обновляются под тот же голос.
 
@@ -22,7 +22,7 @@
 - Ссылки на официальные доки или другие разделы гайда.
 
 **Не делать:**
-- «Давайте», «необходимо», «следует», «важно понимать».
+- Официоз: призывы действовать вместе, безличные модальные глаголы, вводные про «важность понимания».
 - Морализаторство.
 - Маркетинговый пафос.
 - Голые списки без контекста.

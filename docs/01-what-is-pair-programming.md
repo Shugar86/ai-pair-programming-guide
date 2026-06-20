@@ -1,8 +1,8 @@
 # 01. Что такое pair programming
 
-← [README](../README.md) | [02. Агент как pair-programmer](02-agent-as-pair-programmer.md) →
-
 Pair programming с AI — это совместное мышление. Твой мозг отвечает за смысл и направление, агент — за скорость и рутину. Вместе вы делаете одну вещь, а не два отдельных продукта.
+
+← [README](../README.md) | [02. Агент как pair-programmer](02-agent-as-pair-programmer.md) →
 
 ## Классическое парное программирование
 

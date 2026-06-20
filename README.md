@@ -50,7 +50,7 @@
 - [`docs/02-agent-as-pair-programmer.md`](docs/02-agent-as-pair-programmer.md) — кто за что отвечает: ты vs агент.
 - [`docs/03-principles.md`](docs/03-principles.md) — 8 принципов, которые работают в любой среде.
 - [`docs/04-workflow.md`](docs/04-workflow.md) — рабочая петля от задачи до коммита.
-- [`docs/05-environments.md`](docs/05-environments.md) — особенности Cursor, Kimi, Claude, OpenCode, Copilot. Официальные сайты: [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Kimi Code](https://www.moonshot.cn/).
+- [`docs/05-environments.md`](docs/05-environments.md) — особенности Cursor, Kimi, Claude, OpenCode, Copilot, Cody. Официальные сайты: [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Kimi Code](https://www.kimi.com/code).
 - [`docs/06-prompt-patterns.md`](docs/06-prompt-patterns.md) — шаблоны запросов, которые экономят время.
 - [`docs/07-examples/`](docs/07-examples/) — реальные текстовые сессии.
 - [`docs/08-exercises.md`](docs/08-exercises.md) — практические задания.

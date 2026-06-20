@@ -88,7 +88,6 @@ git reset --hard HEAD         # всё к последнему коммиту (�
 
 ```bash
 git remote add origin https://github.com/username/repo.git
-git branch -M main
 git push -u origin main
 ```
 

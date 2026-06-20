@@ -138,6 +138,15 @@ go version
 rustc --version
 ```
 
+**Диалог: проверяем Node.js**
+
+```text
+Ты: Как проверить, установлен ли Node.js?
+Агент: Открой терминал и запусти `node --version`. Если видишь номер версии — всё ок.
+Ты: А если терминал пишет «command not found»?
+Агент: Значит, Node ещё не установлен. Скачай LTS-версию с nodejs.org и перезапусти терминал.
+```
+
 ---
 
 ## Шаг 5. Пакеты и зависимости проекта
@@ -200,9 +209,6 @@ brew install <название-пакета>                          # macOS
 
 ---
 
-## Куда идти дальше
+Предыдущий шаг: разберись с продвинутыми сценариями — [11-advanced-scenarios.md](11-advanced-scenarios.md).
 
-- Как фиксировать изменения — [`13-git-github.md`](13-git-github.md).
-- Как работать в IDE и терминале — [`14-ide-cli-workflow.md`](14-ide-cli-workflow.md).
-- Если установка не идёт — [`15-troubleshooting.md`](15-troubleshooting.md).
-- Как объяснять задачи агенту — [`16-ai-for-beginners.md`](16-ai-for-beginners.md).
+Следующий шаг: научись фиксировать изменения в git — [13-git-github.md](13-git-github.md).

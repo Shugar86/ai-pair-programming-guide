@@ -90,7 +90,7 @@ npm run typecheck # или mypy, tsc, cargo check
 
 Выбирай команды проекта. Если их нет — добавь до агента.
 
-Чеклист для ручной проверки — в [09-checklists.md](09-checklists.md).
+Чеклист для приёмки diff — в [09-checklists.md#before-accept](09-checklists.md#before-accept).
 
 ---
 

@@ -13,7 +13,7 @@
 - **Практик.** Уже пишешь код — хочешь работать с агентом быстрее и чище.  
   Путь: [`docs/01-what-is-pair-programming.md`](docs/01-what-is-pair-programming.md) → [`docs/03-principles.md`](docs/03-principles.md) → [`docs/06-prompt-patterns.md`](docs/06-prompt-patterns.md) → [`docs/07-examples/`](docs/07-examples/).
 - **Лид.** Решаешь, как команда будет использовать AI, и не хочешь получить лапшу в репозитории.  
-  Путь: [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) → [`docs/09-checklists.md`](docs/09-checklists.md) → [`docs/13-git-github.md`](docs/13-git-github.md).
+  Путь: [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) → [`docs/18-senior-playbook.md`](docs/18-senior-playbook.md) → [`docs/17-future.md`](docs/17-future.md).
 
 Каждый путь — свой, но принципы одни.
 
@@ -63,6 +63,7 @@
 - [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md) — что делать, если ничего не получается: WSL, SSH, VDS, откаты.
 - [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — как показать задачу нейросети и что делать, если ничего не понятно.
 - [`docs/17-future.md`](docs/17-future.md) — агенты как часть команды: что ждёт через 2+ года.
+- [`docs/18-senior-playbook.md`](docs/18-senior-playbook.md) — плейбук сеньора и лида: проектирование, мульти-агентные сетапы, контекст, легаси.
 - [`templates/`](templates/) — шаблоны `AGENTS.md`, ADR и карточки сессии для твоих проектов.
 
 ## Быстрый старт

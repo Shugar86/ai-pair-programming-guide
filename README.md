@@ -84,6 +84,8 @@
 
 - [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) — продвинутые сценарии и рабочие кейсы.
 - [`docs/18-senior-playbook.md`](docs/18-senior-playbook.md) — плейбук сеньора и лида: проектирование, мульти-агентные сетапы, контекст, легаси.
+- [`docs/19-security-and-policy.md`](docs/19-security-and-policy.md) — что нельзя отправлять агентам, секреты и политика использования AI в команде.
+- [`docs/20-metrics-and-retro.md`](docs/20-metrics-and-retro.md) — метрики внедрения AI и формат командного ретро.
 - [`docs/17-future.md`](docs/17-future.md) — агенты как часть команды: что ждёт через 2+ года.
 
 ## Быстрый старт

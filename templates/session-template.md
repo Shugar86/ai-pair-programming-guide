@@ -1,41 +1,43 @@
-# Карточка сессии pair programming
+# Pair programming session card
 
-Копируй этот шаблон под каждую задачу. Он помогает не потерять суть в диалоге.
+🌐 **English** · [Русский](session-template.ru.md)
 
-## Задача
+Copy this template for each task. It helps you not lose the thread in the dialogue.
 
-Одно предложение, которое можно проверить:
+## Task
 
-## План
+One verifiable sentence:
+
+## Plan
 
 1.
 2.
 3.
 
-## Ход работы
+## Progress
 
-- Шаг:
-- Результат:
-- Проблемы/вопросы:
+- Step:
+- Result:
+- Problems/questions:
 
-## Что мы создали / что решили
+## What we built / what we decided
 
-Коротко: что получилось и какие выборы сделали. Пример: «Добавили валидацию email. Решили не тащить библиотеку, проверяем регуляркой».
+Briefly: what came out and which choices we made. Example: "Added email validation. Decided not to pull in a library, we check with a regex."
 
-## Проверка
+## Verification
 
-- [ ] Тесты проходят
-- [ ] Diff прочитан
-- [ ] Сообщение коммита понятно
+- [ ] Tests pass
+- [ ] Diff read
+- [ ] Commit message is clear
 
-## Коммит
+## Commit
 
 ```bash
 git commit -m ""
 ```
 
-## Рефлексия
+## Reflection
 
-- Что сработало:
-- Что можно лучше:
-- Следующий шаг:
+- What worked:
+- What could be better:
+- Next step:

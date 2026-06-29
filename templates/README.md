@@ -1,75 +1,77 @@
-# Шаблоны
+# Templates
 
-Эта папка содержит стартовые файлы для работы с агентом. Копируй их в проект, заполняй под себя и обновляй по ходу дела. Хороший шаблон экономит время на объяснениях и снижает риск, что агент пойдёт не туда.
+🌐 **English** · [Русский](README.ru.md)
 
-Что здесь:
+This folder contains starter files for working with an agent. Copy them into your project, fill them in for yourself, and update them as you go. A good template saves time on explanations and lowers the risk of the agent going the wrong way.
 
-- [`AGENTS.md`](AGENTS.md) — контракт проекта: стек, роли, правила, запреты.
-- [`ADR-template.md`](ADR-template.md) — форма для фиксации архитектурных решений.
-- [`session-template.md`](session-template.md) — карточка одной сессии pair programming.
+What's here:
 
----
-
-## Когда и зачем вести `AGENTS.md`
-
-`AGENTS.md` — это долгая память проекта для агента. В нём прописано, на каком языке говорить, какой стек, кто принимает решения, какие тесты запускать и что нельзя делать без согласования.
-
-Создавай `AGENTS.md`, если:
-
-- проект живёт больше одной сессии;
-- в проекте больше одного разработчика или несколько агентов;
-- есть неявные соглашения: naming, структура папок, подход к миграциям;
-- хочешь избежать повторных объяснений и типовых ошибок.
-
-Подробнее — в [05-environments.md](../docs/05-environments.md) и [18-senior-playbook.md](../docs/18-senior-playbook.md).
+- [`AGENTS.md`](AGENTS.md) — the project contract: stack, roles, rules, prohibitions.
+- [`ADR-template.md`](ADR-template.md) — a form for recording architecture decisions.
+- [`session-template.md`](session-template.md) — a card for one pair-programming session.
 
 ---
 
-## Когда использовать ADR
+## When and why to keep an `AGENTS.md`
 
-ADR (Architecture Decision Record) фиксирует нетривиальное решение и причину, по которой оно принято. Не пиши ADR на каждый чих — только тогда, когда выбор влияет на границы модулей, контракты, стек или откат.
+`AGENTS.md` is the project's long-term memory for the agent. It states which language to speak, the stack, who makes decisions, which tests to run, and what can't be done without agreement.
 
-Примеры поводов для ADR:
+Create an `AGENTS.md` if:
 
-- новый сервис или модуль;
-- изменение API или формата данных;
-- замена библиотеки / базы данных;
-- введение адаптера при рефакторинге легаси.
+- the project lives longer than one session;
+- there's more than one developer or several agents on the project;
+- there are implicit conventions: naming, folder structure, the migration approach;
+- you want to avoid repeated explanations and typical mistakes.
 
-Как вести:
-
-1. Возьми [`ADR-template.md`](ADR-template.md).
-2. Назови файл `docs/adr/ADR-NNN-короткое-название.md`.
-3. Заполни контекст, решение, альтернативы и последствия.
-4. Если решение влияет на работу с агентом, заполни блок про AI.
-
-Про проектирование с агентом и фиксацию решений — в [11-advanced-scenarios.md](../docs/11-advanced-scenarios.md) и [18-senior-playbook.md](../docs/18-senior-playbook.md).
+More in [05-environments.md](../docs/en/05-environments.md) and [18-senior-playbook.md](../docs/en/18-senior-playbook.md).
 
 ---
 
-## Карточка сессии
+## When to use an ADR
 
-[`session-template.md`](session-template.md) помогает не потерять нить в длинном диалоге. Заполняй её для задач, которые не укладываются в одну итерацию, или когда передаёшь контекст другому человеку / агенту.
+An ADR (Architecture Decision Record) captures a non-trivial decision and the reason it was made. Don't write an ADR for every little thing — only when the choice affects module boundaries, contracts, the stack, or rollback.
 
-Что фиксируется:
+Examples of reasons for an ADR:
 
-- задача одним предложением;
-- план шагов;
-- что сделано, что заблокировано;
-- проверка: тесты, diff, сообщение коммита;
-- короткая рефлексия.
+- a new service or module;
+- a change to an API or data format;
+- replacing a library / database;
+- introducing an adapter during legacy refactoring.
 
-Сессионные карточки особенно полезны в распределённых командах и при работе в нескольких репозиториях. Подробнее — в [04-workflow.md](../docs/04-workflow.md) и [11-advanced-scenarios.md](../docs/11-advanced-scenarios.md).
+How to keep it:
+
+1. Take [`ADR-template.md`](ADR-template.md).
+2. Name the file `docs/adr/ADR-NNN-short-title.md`.
+3. Fill in the context, the decision, the alternatives, and the consequences.
+4. If the decision affects working with the agent, fill in the AI block.
+
+On designing with the agent and recording decisions — in [11-advanced-scenarios.md](../docs/en/11-advanced-scenarios.md) and [18-senior-playbook.md](../docs/en/18-senior-playbook.md).
 
 ---
 
-## Как выбрать, что подключать
+## The session card
 
-| Ситуация | Что использовать |
+[`session-template.md`](session-template.md) helps you not lose the thread in a long dialogue. Fill it in for tasks that don't fit in one iteration, or when you hand off context to another person / agent.
+
+What's recorded:
+
+- the task in one sentence;
+- the step plan;
+- what's done, what's blocked;
+- verification: tests, diff, commit message;
+- a short reflection.
+
+Session cards are especially useful in distributed teams and when working across several repositories. More in [04-workflow.md](../docs/en/04-workflow.md) and [11-advanced-scenarios.md](../docs/en/11-advanced-scenarios.md).
+
+---
+
+## How to choose what to use
+
+| Situation | What to use |
 | :-- | :-- |
-| Новый проект | `AGENTS.md` + `README.md` проекта |
-| Нетривиальное архитектурное решение | `ADR-template.md` |
-| Задача на несколько сессий | `session-template.md` |
-| Несколько проектов | `AGENTS.md` в каждом + общий `workspace-context.md` |
+| A new project | `AGENTS.md` + the project's `README.md` |
+| A non-trivial architecture decision | `ADR-template.md` |
+| A task spanning several sessions | `session-template.md` |
+| Several projects | An `AGENTS.md` in each + a shared `workspace-context.md` |
 
-Базовые принципы pair programming с агентом — в [03-principles.md](../docs/03-principles.md). Пошаговый рабочий процесс — в [04-workflow.md](../docs/04-workflow.md).
+The basic principles of pair programming with an agent — in [03-principles.md](../docs/en/03-principles.md). The step-by-step workflow — in [04-workflow.md](../docs/en/04-workflow.md).

@@ -1,30 +1,32 @@
-# ADR-000: Название решения
+# ADR-000: Decision title
 
-## Контекст
+🌐 **English** · [Русский](ADR-template.ru.md)
 
-Что происходит, какие ограничения накладываются на задачу.
+## Context
 
-## Решение
+What's happening, what constraints apply to the task.
 
-Что выбрали и почему.
+## Decision
 
-## Альтернативы
+What we chose and why.
 
-Что рассматривали и почему отказались.
+## Alternatives
 
-## Последствия
+What we considered and why we rejected it.
 
-Что усложнится, что упростится, какие риски появляются.
+## Consequences
 
-## Влияние на работу с агентом
+What gets harder, what gets simpler, what risks appear.
 
-### Как это влияет на использование агента?
+## Impact on working with the agent
 
-Что агент должен знать, чтобы не сломать решение или не пойти в обход: новые инварианты, запрещённые приёмы, границы модулей, особенности стека.
+### How does this affect using the agent?
 
-### Требуются ли обновления AGENTS.md / чеклистов?
+What the agent must know so it doesn't break the decision or work around it: new invariants, forbidden techniques, module boundaries, stack specifics.
 
-- [ ] Добавить правило в `AGENTS.md`
-- [ ] Обновить чеклист приёмки
-- [ ] Добавить пример промпта
-- [ ] Не требуется
+### Are updates to AGENTS.md / checklists required?
+
+- [ ] Add a rule to `AGENTS.md`
+- [ ] Update the acceptance checklist
+- [ ] Add a prompt example
+- [ ] Not required

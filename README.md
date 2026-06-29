@@ -1,122 +1,124 @@
-# AI Pair Programming — создавай вместе с агентом
+# AI Pair Programming — build together with your agent
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](#лицензия)
-[![Язык: RU](https://img.shields.io/badge/язык-русский-0a7cff.svg)](#)
-[![Тип: гайд](https://img.shields.io/badge/тип-практический%20гайд-8b5cf6.svg)](#что-внутри)
-[![Cursor · Claude Code · Kimi](https://img.shields.io/badge/агенты-Cursor%20·%20Claude%20Code%20·%20Kimi-1C3C3C.svg)](docs/05-environments.md)
+🌐 **English** · [Русский](./README.ru.md)
 
-Этот гайд не учит нажимать кнопку «сделай за меня». Он учит работать с Cursor, Kimi Code, Claude Code и другими агентами как с напарником: ты держишь направление, агент помогает писать, проверять и не тупить.
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](#license)
+[![Lang: EN · RU](https://img.shields.io/badge/lang-EN%20·%20RU-0a7cff.svg)](./README.ru.md)
+[![Type: practical guide](https://img.shields.io/badge/type-practical%20guide-8b5cf6.svg)](#whats-inside)
+[![Cursor · Claude Code · Kimi](https://img.shields.io/badge/agents-Cursor%20·%20Claude%20Code%20·%20Kimi-1C3C3C.svg)](docs/en/05-environments.md)
 
-> **Суть:** AI — усилитель твоего мышления, не замена.
+This guide doesn't teach you to press a "do it for me" button. It teaches you to work with Cursor, Kimi Code, Claude Code, and other agents as a partner: you hold the direction, the agent helps you write, review, and not go off the rails.
+
+> **The point:** AI is an amplifier of your thinking, not a replacement for it.
 
 ---
 
-## Кому этот гайд
+## Who this guide is for
 
-- **Новичок.** Ты только открыл AI-редактор. Начни с установки окружения и первой сессии.  
-  Путь: [`docs/12-setup.md`](docs/12-setup.md) → [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) → [`docs/04-workflow.md`](docs/04-workflow.md).
-- **Практик.** Уже пишешь код — хочешь работать с агентом быстрее и чище.  
-  Путь: [`docs/01-what-is-pair-programming.md`](docs/01-what-is-pair-programming.md) → [`docs/03-principles.md`](docs/03-principles.md) → [`docs/06-prompt-patterns.md`](docs/06-prompt-patterns.md) → [`docs/07-examples/`](docs/07-examples/).
-- **Лид.** Решаешь, как команда будет использовать AI, и не хочешь получить лапшу в репозитории.  
-  Путь: [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) → [`docs/18-senior-playbook.md`](docs/18-senior-playbook.md) → [`docs/17-future.md`](docs/17-future.md).
+- **Beginner.** You just opened an AI editor. Start with setting up your environment and your first session.  
+  Path: [`docs/en/12-setup.md`](docs/en/12-setup.md) → [`docs/en/16-ai-for-beginners.md`](docs/en/16-ai-for-beginners.md) → [`docs/en/04-workflow.md`](docs/en/04-workflow.md).
+- **Practitioner.** You already write code — you want to work with an agent faster and cleaner.  
+  Path: [`docs/en/01-what-is-pair-programming.md`](docs/en/01-what-is-pair-programming.md) → [`docs/en/03-principles.md`](docs/en/03-principles.md) → [`docs/en/06-prompt-patterns.md`](docs/en/06-prompt-patterns.md) → [`docs/en/07-examples/`](docs/en/07-examples/).
+- **Lead.** You decide how your team will use AI, and you don't want spaghetti in the repo.  
+  Path: [`docs/en/11-advanced-scenarios.md`](docs/en/11-advanced-scenarios.md) → [`docs/en/18-senior-playbook.md`](docs/en/18-senior-playbook.md) → [`docs/en/17-future.md`](docs/en/17-future.md).
 
-Каждый путь — свой, но принципы одни.
+Each path is its own, but the principles are the same.
 
-## Если ты торопишься
+## If you're in a hurry
 
-- [Быстрый старт: одна сессия от задачи до коммита](docs/04-workflow.md)
-- [Антипаттерны и ловушки](docs/10-antipatterns.md)
-- [Для лида/сеньора](docs/18-senior-playbook.md)
+- [Quick start: one session from task to commit](docs/en/04-workflow.md)
+- [Anti-patterns and traps](docs/en/10-antipatterns.md)
+- [For a lead / senior](docs/en/18-senior-playbook.md)
 
-## Почему это про создание, а не про дисциплину
+## Why this is about creating, not discipline
 
-Правила здесь — не табель. Они ограничивают хаос, чтобы освободить место для творчества.  
-Когда ты знаешь, кто ведёт, что проверять и куда идти, агент перестаёт быть помехой и становится рабочей рукой.
+The rules here aren't a report card. They contain chaos to make room for creativity.  
+When you know who's leading, what to check, and where to go, the agent stops being an obstacle and becomes a working hand.
 
-Пример: ты хочешь добавить тёмную тему в приложение. Без рамок агент может переписать половину CSS, втащить новую библиотеку и сломать формы. С рамками ты говоришь: «Только CSS-переменные, никаких новых зависимостей, проверь обе темы на трёх экранах». Получаешь результат, а не археологию.
+Example: you want to add a dark theme to your app. Without boundaries, the agent might rewrite half your CSS, pull in a new library, and break your forms. With boundaries you say: "CSS variables only, no new dependencies, verify both themes on three screens." You get a result, not an archaeology dig.
 
-## Как это звучит
+## What it sounds like
 
-**Диалог 1. Слишком сложно.**
-
-```text
-Ты: Добавь поиск по названию в списке проектов.
-Агент: Можно взять полнотекстовый поиск, индексировать теги и настроить автодополнение.
-Ты: Стоп. Пока ищем по уже загруженному списку через includes(). Без новых сервисов.
-Агент: Ок, добавляю фильтр на клиенте.
-```
-
-**Диалог 2. Ты ведёшь.**
+**Dialogue 1. Too complex.**
 
 ```text
-Ты: Нужно исправить баг: при пустом email падает валидация.
-Агент: План: проверить input, выбросить кастомное исключение, обернуть форму в try/catch.
-Ты: Нет. Просто верни null и покажи сообщение под полем. Меньше кода — меньше ошибок.
-Агент: Понял. Меняю только обработку пустого значения.
+You:   Add search by name to the projects list.
+Agent: We could use full-text search, index the tags, and set up autocomplete.
+You:   Stop. For now we search the already-loaded list with includes(). No new services.
+Agent: OK, adding a client-side filter.
 ```
 
-## Что внутри
+**Dialogue 2. You're leading.**
 
-### База и философия
+```text
+You:   Fix a bug: validation crashes when the email is empty.
+Agent: Plan: validate the input, throw a custom exception, wrap the form in try/catch.
+You:   No. Just return null and show a message under the field. Less code — fewer bugs.
+Agent: Got it. Changing only the empty-value handling.
+```
 
-- [`docs/01-what-is-pair-programming.md`](docs/01-what-is-pair-programming.md) — что такое pair programming с AI.
-- [`docs/02-agent-as-pair-programmer.md`](docs/02-agent-as-pair-programmer.md) — кто за что отвечает: ты vs агент.
-- [`docs/03-principles.md`](docs/03-principles.md) — 8 принципов, которые работают в любой среде.
+## What's inside
 
-### Ежедневный цикл
+### Foundation & philosophy
 
-- [`docs/04-workflow.md`](docs/04-workflow.md) — рабочая петля от задачи до коммита.
-- [`docs/08-exercises.md`](docs/08-exercises.md) — практические задания.
-- [`docs/09-checklists.md`](docs/09-checklists.md) — чеклисты на каждом этапе.
-- [`docs/10-antipatterns.md`](docs/10-antipatterns.md) — антипаттерны работы с AI.
+- [`docs/en/01-what-is-pair-programming.md`](docs/en/01-what-is-pair-programming.md) — what pair programming with AI is.
+- [`docs/en/02-agent-as-pair-programmer.md`](docs/en/02-agent-as-pair-programmer.md) — who owns what: you vs. the agent.
+- [`docs/en/03-principles.md`](docs/en/03-principles.md) — 8 principles that work in any environment.
 
-### Окружение и инструменты
+### The daily loop
 
-- [`docs/05-environments.md`](docs/05-environments.md) — Cursor, Kimi, Claude, OpenCode, Copilot, Cody. Официальные сайты: [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Kimi Code](https://www.kimi.com/code).
-- [`docs/06-prompt-patterns.md`](docs/06-prompt-patterns.md) — шаблоны запросов, которые экономят время.
-- [`docs/07-examples/`](docs/07-examples/) — реальные текстовые сессии.
-- [`docs/12-setup.md`](docs/12-setup.md) — что скачать, как установить агентов, git, пакеты и стек.
-- [`docs/13-git-github.md`](docs/13-git-github.md) — основы git и GitHub: clone, commit, PR, merge, CI/CD.
-- [`docs/14-ide-cli-workflow.md`](docs/14-ide-cli-workflow.md) — как работать в IDE и в терминале.
-- [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md) — что делать, если ничего не получается: WSL, SSH, VDS, откаты.
-- [`templates/`](templates/) — шаблоны `AGENTS.md`, ADR и карточки сессии для твоих проектов.
+- [`docs/en/04-workflow.md`](docs/en/04-workflow.md) — the working loop from task to commit.
+- [`docs/en/08-exercises.md`](docs/en/08-exercises.md) — hands-on exercises.
+- [`docs/en/09-checklists.md`](docs/en/09-checklists.md) — checklists for every stage.
+- [`docs/en/10-antipatterns.md`](docs/en/10-antipatterns.md) — anti-patterns of working with AI.
 
-### Для новичков
+### Environment & tools
 
-- [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md) — как показать задачу нейросети и что делать, если ничего не понятно.
+- [`docs/en/05-environments.md`](docs/en/05-environments.md) — Cursor, Kimi, Claude, OpenCode, Copilot, Cody. Official sites: [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Kimi Code](https://www.kimi.com/code).
+- [`docs/en/06-prompt-patterns.md`](docs/en/06-prompt-patterns.md) — request templates that save time.
+- [`docs/en/07-examples/`](docs/en/07-examples/) — real text sessions.
+- [`docs/en/12-setup.md`](docs/en/12-setup.md) — what to download, how to install agents, git, packages, and the stack.
+- [`docs/en/13-git-github.md`](docs/en/13-git-github.md) — git and GitHub basics: clone, commit, PR, merge, CI/CD.
+- [`docs/en/14-ide-cli-workflow.md`](docs/en/14-ide-cli-workflow.md) — how to work in the IDE and in the terminal.
+- [`docs/en/15-troubleshooting.md`](docs/en/15-troubleshooting.md) — what to do when nothing works: WSL, SSH, VDS, rollbacks.
+- [`templates/`](templates/) — `AGENTS.md`, ADR, and session-card templates for your projects.
 
-### Для сеньоров и лидов
+### For beginners
 
-- [`docs/11-advanced-scenarios.md`](docs/11-advanced-scenarios.md) — продвинутые сценарии и рабочие кейсы.
-- [`docs/18-senior-playbook.md`](docs/18-senior-playbook.md) — плейбук сеньора и лида: проектирование, мульти-агентные сетапы, контекст, легаси.
-- [`docs/19-security-and-policy.md`](docs/19-security-and-policy.md) — что нельзя отправлять агентам, секреты и политика использования AI в команде.
-- [`docs/20-metrics-and-retro.md`](docs/20-metrics-and-retro.md) — метрики внедрения AI и формат командного ретро.
-- [`docs/17-future.md`](docs/17-future.md) — агенты как часть команды: что ждёт через 2+ года.
+- [`docs/en/16-ai-for-beginners.md`](docs/en/16-ai-for-beginners.md) — how to show a task to a neural net and what to do when nothing makes sense.
 
-## Быстрый старт
+### For seniors & leads
 
-1. Открой проект в редакторе с AI.
-2. Опиши задачу одним предложением, которое можно проверить.
-3. Скажи агенту: «Сначала план, потом код. Не трогай весь проект.»
-4. Выбери минимальный шаг.
-5. Реализуй: агент пишет, ты читаешь diff.
-6. Проверь тесты, diff, здравый смысл.
-7. Коммить с сообщением, которое объясняет, что изменилось.
+- [`docs/en/11-advanced-scenarios.md`](docs/en/11-advanced-scenarios.md) — advanced scenarios and real cases.
+- [`docs/en/18-senior-playbook.md`](docs/en/18-senior-playbook.md) — the senior/lead playbook: design, multi-agent setups, context, legacy.
+- [`docs/en/19-security-and-policy.md`](docs/en/19-security-and-policy.md) — what you must never send to agents, secrets, and the AI-usage policy for a team.
+- [`docs/en/20-metrics-and-retro.md`](docs/en/20-metrics-and-retro.md) — AI-adoption metrics and a team retro format.
+- [`docs/en/17-future.md`](docs/en/17-future.md) — agents as part of the team: what's coming in 2+ years.
 
-Подробности — в [`docs/04-workflow.md`](docs/04-workflow.md).
+## Quick start
 
-## Если ничего не понятно
+1. Open the project in an AI-enabled editor.
+2. Describe the task in one verifiable sentence.
+3. Tell the agent: "Plan first, then code. Don't touch the whole project."
+4. Pick the smallest step.
+5. Implement: the agent writes, you read the diff.
+6. Check the tests, the diff, and common sense.
+7. Commit with a message that explains what changed.
 
-Начни с [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md). Там разобрано, как показать задачу нейросети, что делать, когда агент не понял, и как не утонуть в ответе.  
-Если техническое окружение ломается — иди в [`docs/15-troubleshooting.md`](docs/15-troubleshooting.md).
+Details — in [`docs/en/04-workflow.md`](docs/en/04-workflow.md).
 
-## Как использовать в команде
+## If nothing makes sense
 
-- Покажи джунам [`docs/16-ai-for-beginners.md`](docs/16-ai-for-beginners.md), затем [`docs/04-workflow.md`](docs/04-workflow.md).
-- Настрой [`AGENTS.md`](templates/AGENTS.md) из [`templates/`](templates/).
-- Используй [`docs/09-checklists.md`](docs/09-checklists.md) и [`docs/10-antipatterns.md`](docs/10-antipatterns.md) как ретро-чеклисты.
-- Проведи воркшоп по [`docs/08-exercises.md`](docs/08-exercises.md), если хочешь выровнять практику.
+Start with [`docs/en/16-ai-for-beginners.md`](docs/en/16-ai-for-beginners.md). It covers how to show a task to a neural net, what to do when the agent didn't get it, and how not to drown in the answer.  
+If your technical environment breaks — go to [`docs/en/15-troubleshooting.md`](docs/en/15-troubleshooting.md).
 
-## Лицензия
+## How to use it in a team
 
-MIT — свободно копируй, переделывай, используй в учебе и работе.
+- Show juniors [`docs/en/16-ai-for-beginners.md`](docs/en/16-ai-for-beginners.md), then [`docs/en/04-workflow.md`](docs/en/04-workflow.md).
+- Set up [`AGENTS.md`](templates/AGENTS.md) from [`templates/`](templates/).
+- Use [`docs/en/09-checklists.md`](docs/en/09-checklists.md) and [`docs/en/10-antipatterns.md`](docs/en/10-antipatterns.md) as retro checklists.
+- Run a workshop on [`docs/en/08-exercises.md`](docs/en/08-exercises.md) if you want to align practice.
+
+## License
+
+MIT — copy, adapt, and use it freely, in study and at work.

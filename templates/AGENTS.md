@@ -1,146 +1,148 @@
-# AGENTS.md — контракт проекта
+# AGENTS.md — the project contract
 
-Копируй этот шаблон в корень проекта как `AGENTS.md` и заполни. Он говорит агенту, кто ведёт, а кто помогает.
+🌐 **English** · [Русский](AGENTS.ru.md)
 
-## Общее
+Copy this template into the project root as `AGENTS.md` and fill it in. It tells the agent who leads and who helps.
 
-- **Язык:** русский / английский
-- **Роль агента:** pair-programmer
-- **Ты ведёшь:** приоритеты, архитектуру, компромиссы
-- **Агент помогает:** писать код, проверять, сужать неопределённость
-- **Стек проекта:** например, Python 3.11, Next.js 14, PostgreSQL 15
+## General
 
-## Роль и ответственность
+- **Language:** Russian / English
+- **Agent role:** pair-programmer
+- **You lead:** priorities, architecture, trade-offs
+- **The agent helps:** write code, review, narrow uncertainty
+- **Project stack:** e.g., Python 3.11, Next.js 14, PostgreSQL 15
 
-Агент помогает создавать, но не решает за тебя. Он предлагает варианты, пишет код и ловит проблемы. Выбор направления, оценка рисков и финальное решение — всегда за тобой.
+## Role and responsibility
 
-> Пример: если агент хочет поменять архитектуру или втащить новую зависимость — стоп, обсуди сначала.
+The agent helps you create, but doesn't decide for you. It proposes options, writes code, and catches problems. The choice of direction, risk assessment, and the final decision are always yours.
 
-## Стек
+> Example: if the agent wants to change the architecture or pull in a new dependency — stop, discuss it first.
 
-- **Язык:**
-- **Фреймворк:**
-- **База данных:**
-- **Тесты:**
-- **Линтер/форматтер:**
+## Stack
 
-## Правила
+- **Language:**
+- **Framework:**
+- **Database:**
+- **Tests:**
+- **Linter/formatter:**
 
-- KISS — простейшее решение
-- Минимальный diff — трогай только нужное
-- YAGNI — без кода «на будущее»
-- План до кода — согласуй подход перед реализацией
-- Проверяй diff перед применением
-- Сомневаешься — спроси
+## Rules
+
+- KISS — the simplest solution
+- Minimal diff — touch only what's needed
+- YAGNI — no code "for the future"
+- Plan before code — agree on the approach before implementing
+- Check the diff before applying
+- In doubt — ask
 
 ## Git
 
-- Коммить результат задачи.
-- Сообщение коммита: `<type>: <что изменилось>`.
-- Не коммить `.env`, ключи, локальные настройки.
+- Commit the result of the task.
+- Commit message: `<type>: <what changed>`.
+- Don't commit `.env`, keys, or local settings.
 
-## Запрещено
+## Forbidden
 
-- Хардкодить секреты.
-- Делать force push.
-- Править прод без согласования.
-- Притворяться, что всё понятно, если непонятно.
-- Менять больше 3 файлов без согласования.
+- Hardcoding secrets.
+- Force push.
+- Editing production without agreement.
+- Pretending everything's clear when it isn't.
+- Changing more than 3 files without agreement.
 
-## Контакты / эскалация
+## Contacts / escalation
 
-- Кого спрашивать, если не уверен:
-- Как деплоить:
-- Где логи:
+- Who to ask when unsure:
+- How to deploy:
+- Where the logs are:
 
 ---
 
-## Примеры для типовых стеков
+## Examples for common stacks
 
-Скопируй подходящий блок в свой `AGENTS.md` и удали лишнее.
+Copy the matching block into your `AGENTS.md` and delete the rest.
 
-### TypeScript веб-продукт
+### TypeScript web product
 
 ```markdown
-## Общее
+## General
 
-- **Язык:** русский
-- **Роль агента:** pair-programmer
-- **Ты ведёшь:** UX, архитектуру, приоритеты фич
-- **Агент помогает:** компоненты, тесты, типы, ревью diff
+- **Language:** English
+- **Agent role:** pair-programmer
+- **You lead:** UX, architecture, feature priorities
+- **The agent helps:** components, tests, types, diff review
 
-## Стек
+## Stack
 
-- **Язык:** TypeScript 5.x
-- **Фреймворк:** Next.js 14 (App Router)
-- **Стили:** Tailwind CSS
-- **База данных:** PostgreSQL 15
+- **Language:** TypeScript 5.x
+- **Framework:** Next.js 14 (App Router)
+- **Styles:** Tailwind CSS
+- **Database:** PostgreSQL 15
 - **ORM:** Prisma
-- **Тесты:** Vitest, Playwright для e2e
-- **Линтер/форматтер:** ESLint, Prettier
+- **Tests:** Vitest, Playwright for e2e
+- **Linter/formatter:** ESLint, Prettier
 
-## Правила
+## Rules
 
-- Компоненты — функции, не классы.
-- Любой props-интерфейс описывай явно.
-- Фетчинг данных — в server components или route handlers.
-- Не добавляй клиентские библиотеки без обсуждения.
-- Минимальный diff: одна фича — один компонент / один endpoint.
+- Components are functions, not classes.
+- Declare every props interface explicitly.
+- Data fetching — in server components or route handlers.
+- Don't add client libraries without discussion.
+- Minimal diff: one feature — one component / one endpoint.
 ```
 
 ### Python backend
 
 ```markdown
-## Общее
+## General
 
-- **Язык:** русский
-- **Роль агента:** pair-programmer
-- **Ты ведёшь:** API-контракты, схему БД, интеграции
-- **Агент помогает:** эндпоинты, сервисы, тесты, миграции
+- **Language:** English
+- **Agent role:** pair-programmer
+- **You lead:** API contracts, the DB schema, integrations
+- **The agent helps:** endpoints, services, tests, migrations
 
-## Стек
+## Stack
 
-- **Язык:** Python 3.11
-- **Фреймворк:** FastAPI
-- **База данных:** PostgreSQL 15
-- **ORM / миграции:** SQLAlchemy 2.x, Alembic
-- **Тесты:** pytest
-- **Линтер/форматтер:** ruff, mypy
+- **Language:** Python 3.11
+- **Framework:** FastAPI
+- **Database:** PostgreSQL 15
+- **ORM / migrations:** SQLAlchemy 2.x, Alembic
+- **Tests:** pytest
+- **Linter/formatter:** ruff, mypy
 
-## Правила
+## Rules
 
-- Слой API не знает про детали БД — используй сервисный слой.
-- Схемы Pydantic отдельно от моделей SQLAlchemy.
-- Миграции руками, не генерируй авто без проверки.
-- Все эндпоинты покрыты тестами на 200 и на ошибки.
-- Не меняй публичный API без согласования.
+- The API layer doesn't know DB details — use the service layer.
+- Pydantic schemas separate from SQLAlchemy models.
+- Migrations by hand, don't auto-generate without review.
+- All endpoints covered by tests for 200 and for errors.
+- Don't change the public API without agreement.
 ```
 
-### Инфра-репозиторий
+### Infrastructure repository
 
 ```markdown
-## Общее
+## General
 
-- **Язык:** русский
-- **Роль агента:** pair-programmer
-- **Ты ведёшь:** архитектуру инфраструктуры, доступы, бюджет
-- **Агент помогает:** Terraform-конфиги, пайплайны, скрипты автоматизации
+- **Language:** English
+- **Agent role:** pair-programmer
+- **You lead:** infrastructure architecture, access, budget
+- **The agent helps:** Terraform configs, pipelines, automation scripts
 
-## Стек
+## Stack
 
-- **Провайдер:** Terraform + AWS / Yandex Cloud
-- **Конфигурация:** Ansible для bare-metal
+- **Provider:** Terraform + AWS / Yandex Cloud
+- **Configuration:** Ansible for bare-metal
 - **CI/CD:** GitHub Actions / GitLab CI
-- **Контейнеры:** Docker, Docker Compose
-- **Тесты:** terraform validate, tflint, molecule
+- **Containers:** Docker, Docker Compose
+- **Tests:** terraform validate, tflint, molecule
 
-## Правила
+## Rules
 
-- Никаких секретов в репозитории — только ссылки на vault / ssm.
-- Изменения инфраструктуры — через PR и plan перед apply.
-- Бэкапы и откаты описывай явно.
-- Не меняй прод без согласования.
-- Любой скрипт должен быть идемпотентным.
+- No secrets in the repository — only references to vault / ssm.
+- Infrastructure changes — via PR and a plan before apply.
+- Describe backups and rollbacks explicitly.
+- Don't change production without agreement.
+- Every script must be idempotent.
 ```
 
-Больше про роль `AGENTS.md` и работу со средой — в [05-environments.md](../docs/05-environments.md) и [18-senior-playbook.md](../docs/18-senior-playbook.md).
+More on the role of `AGENTS.md` and working with the environment — in [05-environments.md](../docs/en/05-environments.md) and [18-senior-playbook.md](../docs/en/18-senior-playbook.md).

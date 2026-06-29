@@ -92,7 +92,7 @@ npm run typecheck # or mypy, tsc, cargo check
 
 Use the project's commands. If there are none — add them before the agent does.
 
-A diff-acceptance checklist is in [09-checklists.md#before-accepting-a-diff](09-checklists.md#before-accepting-a-diff).
+A diff-acceptance checklist is in [09-checklists.md#before-accepting-a-diff](09-checklists.md#before-accept).
 
 ---
 

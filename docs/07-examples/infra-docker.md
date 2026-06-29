@@ -1,5 +1,7 @@
 # Пример: Docker для Python + Node приложения
 
+🌐 [English](../en/07-examples/infra-docker.md) · **Русский**
+
 **Вердикт:** Docker-образ проверяешь не глазами, а `docker build` и `docker run`.
 
 **Среда:** Kimi Code (CLI)  

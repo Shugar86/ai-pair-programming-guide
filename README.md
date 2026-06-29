@@ -1,5 +1,10 @@
 # AI Pair Programming — создавай вместе с агентом
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](#лицензия)
+[![Язык: RU](https://img.shields.io/badge/язык-русский-0a7cff.svg)](#)
+[![Тип: гайд](https://img.shields.io/badge/тип-практический%20гайд-8b5cf6.svg)](#что-внутри)
+[![Cursor · Claude Code · Kimi](https://img.shields.io/badge/агенты-Cursor%20·%20Claude%20Code%20·%20Kimi-1C3C3C.svg)](docs/05-environments.md)
+
 Этот гайд не учит нажимать кнопку «сделай за меня». Он учит работать с Cursor, Kimi Code, Claude Code и другими агентами как с напарником: ты держишь направление, агент помогает писать, проверять и не тупить.
 
 > **Суть:** AI — усилитель твоего мышления, не замена.
